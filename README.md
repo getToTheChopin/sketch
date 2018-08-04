@@ -1,0 +1,1 @@
+Building an etch-a-sketch website, as per The Odin Project curriculum.
