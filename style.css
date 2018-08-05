@@ -1,9 +1,44 @@
 .gridCell {
     padding: 0;
-    margin : 0;
+    margin : 2px;
+    border: 1px solid black;
+    display: inline-block;
 }
 
 .gridRow {
     padding: 0;
     margin : 0;
+}
+
+#grid {
+    margin: auto;
+    width:50%;
+    margin-top:5%;
+}
+
+html, body {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight:bold;
+    padding: 5px;
+}
+
+p {
+    margin-top:7px;
+    margin-bottom:7px;
+    padding: 5px;
+}
+
+input {
+    padding:5px;
+    margin: 5px;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
 }

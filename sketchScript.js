@@ -1,7 +1,5 @@
 const gridDiv = document.querySelector('#grid');
-const sizeChoice = document.querySelector('#sizeChoice');
 const maxWidth = 360;
-
 
 // Create grid when submit button is pressed
 var gridButton = document.querySelector('#submitGrid');
@@ -29,8 +27,6 @@ gridButton.addEventListener('click', () => {
             console.log(i);
             
             let gridCell = document.createElement('div');
-            gridCell.style.border = "thin solid black";
-            gridCell.style.display="inline-block";
             gridCell.style.width=gridWidth;
             gridCell.style.height=gridHeight;
             gridCell.classList.add("gridCell");
@@ -60,5 +56,20 @@ function addGridListeners() {
 function changeCellColour(){
     let cellID = this.id;
     console.log(cellID);
-    this.style.backgroundColor = "gray";
+    this.style.backgroundColor = "rgb("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
 }
+
+// Delete grid when button is pressed
+let resetButton = document.querySelector('#clearGrid');
+resetButton.addEventListener('click', () => {
+
+    console.log("Reset button function");
+    
+    let gridRows = document.getElementsByClassName("gridRow");
+
+    while(gridRows[0]) {
+        gridRows[0].parentNode.removeChild(gridRows[0]);
+    }
+
+    document.getElementById("gridChoice").value = "";
+});

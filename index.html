@@ -9,15 +9,22 @@
 </head>
 
 <body>
-    <h1>Etch-a-Sketch</h1>
 
-    <p>How many rows and columns would you like to include in the grid?</p>
+    <div id="title">
+            <h1>Etch-a-Sketch</h1>
+    </div>
 
-    <input type="text" id="gridChoice">
-    <button id="submitGrid">Draw the grid!</button>
+    <div id="instruction">
+            <p>How many rows and columns would you like to include in the grid?</p>
+    </div>
 
-    <div id="sizeChoice">
+    <div id="sizeInput">
+        <input type="text" id="gridChoice" placeholder="Enter a number here">
+    </div>
 
+    <div id="buttons">
+            <button id="submitGrid">Draw the grid!</button>
+            <button id="clearGrid">Reset</button>
     </div>
 
     <div id="grid">
